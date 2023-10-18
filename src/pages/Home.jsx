@@ -1,11 +1,13 @@
 import React from 'react'
+import About from '../components/About/About'
 import Hero from '../components/Hero/Hero'
 import Pagination from '../components/pagination/pagination'
 const Home = () => {
   return ( 
-    <div className='mt-32 p-2 lg:p-2 xl:p-12'>
+    <div className='mt-32'>
       <Hero />
-      <Pagination/>
+      <Pagination />
+      <About/>
     </div>
   )
 }

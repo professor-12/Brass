@@ -2,8 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 export const Header = () => {
       return (
-            <nav className='bg-black'>
-                  <div className='flex bg-black fixed top-0 right-0  left-0 container   px-8 lg:px-0 lg:w-[80%] mx-auto items-center p-4 justify-between'>
+            <div className='fixed z-50 right-0 top-0 left-0  bg-black'>
+                  <div className='flex bg-black relative  left-0 container   px-4  lg:w-[86.8%] mx-auto items-center p-4 justify-between'>
                         <div className=''>
                               <img src="/logo.svg" alt="" />
                         </div>
@@ -18,6 +18,6 @@ export const Header = () => {
                               </div>
                         </div>
                   </div>
-            </nav>
+            </div>
       )
 }
