@@ -3,11 +3,10 @@ import { VideoData } from '../../DummyData/utils'
 
 const AboutPagination = () => {
       const [videoDataindex, setvideoDataindex] = useState(0)
-      const [numberofButton, setNumberButton] = useState([1, 2, 3, 4, 5, 6])
+      const numberofButton = useState([1, 2, 3, 4, 5, 6])
       const video = VideoData[videoDataindex]
-      const staticvideo = VideoData[0].videouRL
+      const staticvideo = VideoData[3].videouRL
       const handleslideShow = useCallback(() => {
-            console.log(videoDataindex)
             if (videoDataindex >= 5) {
                   setvideoDataindex(0)
             }
@@ -37,7 +36,7 @@ const AboutPagination = () => {
                               VideoData.map((item) => {
                                     return (
                                           <div key={item.videouRL} className='border  min-h-[34rem] rounded-2xl border-gray-300/60 pb-8'>
-                                                <video src={item.videouRL} className='rounded-t-xl' preload autoPlay loop muted ></video>
+                                                <video src={item.videouRL} className='rounded-t-xl w-full' preload autoPlay loop muted ></video>
 
                                                 <div className='text-center space-y-4  mt-12 mx-auto'>
                                                       <h2 className='text-3xl font-semibold'>{item.title}</h2>
