@@ -7,24 +7,24 @@ const Stat = () => {
                         <h1 className='text-3xl  md:text-4xl xl:text-5xl font-bold'>The best decision you will make for your business today</h1>
                         <p className="md:font-[500] font-[400] md:text-lg">We are very open and transparent with our customers. So open that we’ve published a pricing table with all the information you need.</p>
                   </div>
-                  <div className='mx-auto w-[80%] mb-40'>
+                  <div className='mx-auto w-[80%] md:mt-12  mb-40'>
                         <h1 className='text-xl mb-10 md:text-xl xl:text-[1.3rem] font-semibold'>Outgoing payments</h1>
 
 
                         <table className='table-fixed w-full '>
-                              <tr className='h-[5rem] bg-[#131416]'>
+                              <tr className='h-[4rem] bg-[#131416]'>
                                     <th className='text-left'></th>
                                     <th className='text-left'>To</th>
                                     <th className='text-left'>What you pay in KES</th>
                                     <th className='text-left'>Additional charges</th>
                               </tr>
-                              <tr className='h-[5rem] border-b-2 border-[#202025]'>
+                              <tr className='h-[4rem] border-b-2 border-[#202025]'>
                                     <th className='text-left'>Mobile money</th>
                                     <td className='text-left'>M-PESA, Airtel money</td>
                                     <td className='text-left'>What you pay in KES</td>
                                     <td className='text-left'>Standard MPESA / Airtel Charges</td>
                               </tr>
-                              <tr className='h-[5rem] border-b-2 border-[#202025]'>
+                              <tr className='h-[4rem] border-b-2 border-[#202025]'>
                                     <th className='text-left'>Bank transfers</th>
                                     <td className='text-left'>All banks</td>
                                     <td className='text-left'>50</td>
@@ -39,37 +39,37 @@ const Stat = () => {
 
 
                         <table className='table-fixed w-full '>
-                              <tr className='h-[5rem] bg-[#131416]'>
+                              <tr className='h-[4rem] bg-[#131416]'>
                                     <th className='text-left'></th>
                                     <th className='text-left'>From</th>
                                     <th className='text-left'>What you pay</th>
                                     <th className='text-left'>What your customers pay</th>
                               </tr>
-                              <tr className='h-[5rem]'>
+                              <tr className='h-[4rem]'>
                                     <th className='text-left'>Mobile money</th>
                                     <td className='text-left'>M-PESA, Airtel money</td>
                                     <td className='text-left'>0.5% of transaction amount</td>
                                     <td className='text-left'>Standard MPESA / Airtel Charges</td>
                               </tr>
-                              <tr className='h-[5rem] border-b-2 border-[#202025]'>
+                              <tr className='h-[4rem] border-b border-[#202025]'>
                                     <th className='text-left'></th>
                                     <td className='text-left'>Airtel money</td>
                                     <td className='text-left'>1% of transaction amount	</td>
                                     <td className='text-left'>-</td>
                               </tr>
-                              <tr className='h-[5rem] border-b-2 border-[#202025]'>
+                              <tr className='h-[4rem] border-b border-[#202025]'>
                                     <th className='text-left'>Local cards</th>
                                     <td className='text-left'>VISA, MasterCard</td>
                                     <td className='text-left'>2.50%</td>
                                     <td className='text-left'>-</td>
                               </tr>
-                              <tr className='h-[5rem]'>
+                              <tr className='h-[4rem]'>
                                     <th className='text-left'>International cards</th>
                                     <td className='text-left'>VISA, MasterCard</td>
                                     <td className='text-left'>3.25%</td>
                                     <td className='text-left'>-</td>
                               </tr>
-                              <tr className='h-[5rem] border-b-2 border-[#202025]'>
+                              <tr className='h-[4rem]  '>
                                     <th className='text-left'></th>
                                     <td className='text-left'>AMEX</td>
                                     <td className='text-left'>3.80%</td>

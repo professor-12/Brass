@@ -2,10 +2,10 @@ import React from 'react'
 
 const Hero = () => {
       return (
-            <section className='w-full  p-4 lg:container mx-auto lg:w-[78%]'>
+            <section className='w-full lg:px-4 p-4 lg:container mx-auto lg:w-[78%]'>
                   <div className='flex  md:flex-row  flex-col-reverse md:space-x-8 items-center justify-between'>
                         <div className='space-y-6 mt-12 md:mt-0 md:w-[80%]'>
-                              <h1 className='text-5xl sm:text-5xl lg:text-6xl tracking-wide leading-[1.2] lg:font-bold font-semibold'>The growth patner for your business</h1>
+                              <h1 className='text-5xl sm:text-5xl lg:text-6xl tracking-wide lg:leading-[1] lg:font-bold font-semibold'>The growth patner for your business</h1>
                               <p className='text-lg'>Do more with a Brass account that comes with top-end financial tools and integrations to help grow your business.
                               </p>
                               <br /> 

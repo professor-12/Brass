@@ -5,6 +5,7 @@ export const DummyData = [
 ]
 
 
+
 export const VideoData = [
       { videouRL: "https://s3.eu-west-1.amazonaws.com/cms.trybrass.com/invoice_ee1640fc95.mp4", title:"Invoice like a pro" , content:"Send, receive, and reconcile invoices all on one platform."},
       
@@ -18,4 +19,24 @@ export const VideoData = [
       { videouRL: "https://s3.eu-west-1.amazonaws.com/cms.trybrass.com/Instant_payment_eeefa8e93e.mp4", title:"Instant Payouts",content:"Pay your staff salaries and your suppliers, and they will receive payouts instantly."},
 
       { videouRL: "https://s3.eu-west-1.amazonaws.com/cms.trybrass.com/cross_platform_22b81244b4.mp4", title:"Cross-Platform Availability",content:"Access your account everywhere. Available on IOS and Android."},
+]
+
+export const AccodionData = [
+      {title:"Who can sign up on Brass?",content:["We currently serve all business types in Kenya. Both registered and non-registered businesses are supported. Registered businesses include sole traders, partnerships and limited liabilities."]},
+      {title:"What do I need to open a Brass account?",content:["You will need government-issued IDs (Including BVN) and your company's incorporation documents."]},
+      {
+            title:"Why do you ask for government issued ID and company documents?", content:["It is required by the Nigerian law and regulation, which we operate within, for all business accounts to be duly KYC- ed.","It helps us protect you better against fraudulence and money laundering cases that may arise from, but are not limited to, wrong or unapproved persons opening an account for your business without your permission.","It protects us as a business from fraud risks so that we may serve legitimate businesses by approved people."]},
+
+
+      {title:"What does Brass come with?",content:["An NDIC-Insured NUBAN current account ready for business." , "Cash withdrawal." , "Payments to take care of payables and receivables.","Capital","Team banking with roles and privileges.","Invoices","POS Terminals at your request"]},
+
+
+]
+
+
+export const FooterList = [
+      {title:"Support",links:["Legal"]},
+      {title:"Legal",links:["Terms of servise","Privacy policy"]},
+      {title:"Follow",links:["Twitter","Instagram","Facebook","Youtube"]},
+      {title:"Contact",links:["+254 753870128" , "hello@brass.co.ke","help@brass.co.ke"]},
 ]

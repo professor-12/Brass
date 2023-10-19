@@ -8,7 +8,7 @@ body {
 }
 
 .popup {
-  display:none;
+  disxplay:none;
 }
 .countrylogo:hover  .popup  {
   display: flex;
