@@ -3,7 +3,7 @@ import { VideoData } from '../../DummyData/utils'
 
 const AboutPagination = () => {
       const [videoDataindex, setvideoDataindex] = useState(0)
-      const numberofButton = useState([1, 2, 3, 4, 5, 6])
+      const numberofButton = [1,2,3,4,5,6]
       const video = VideoData[videoDataindex]
       const staticvideo = VideoData[3].videouRL
       const handleslideShow = useCallback(() => {

@@ -1,19 +1,18 @@
-import { motion, useScroll, useTransform , useMotionValueEvent } from 'framer-motion'
+import { motion, useScroll , useTransform } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { DummyData } from '../../DummyData/utils'
 import Card from '../../UI/card/Card'
 import Svg from '../../UI/card/Svg/Svg'
 const Pagination = () => {
-      const targetScroll = useRef(null)
-      const { scrollX } = useScroll({ target: targetScroll })
-      useMotionValueEvent(scrollX, "change", (latest) => {
-            console.log("Page scroll: ", latest)
-      })
-      const scroll = useTransform(scrollX, [0, 100], [0, 300])
       const [data] = useState(DummyData)
       const [disable , setdisable] = useState({ left: true, right: false })
       const [paginateindex, setpaginateindex] = useState(0)
       const visible = data[paginateindex]
+
+      const ref = useRef(null)
+      const { scrollYProgress, scrollY, scrollX } = useScroll(ref)
+      const xaxxis = useTransform(scrollX , [10 , 30] , [1,100])
+      console.log(scrollYProgress)
 
       const handlepaginateright = () => {
             if (paginateindex == 2) {
@@ -21,13 +20,15 @@ const Pagination = () => {
             }
             setpaginateindex((prev) => prev + 1)
       }
-
+      
       const handlepaginateleft = () => {
             if (paginateindex == 0) {
                   setdisable({ left: true, right: false }); return;
             }
             setpaginateindex((prev) => prev - 1)
       }
+
+      
       return (
             <section className='mt-20 pb-32 px-4 w-full'>
                   <div>
@@ -37,20 +38,22 @@ const Pagination = () => {
                               </p>
                               <p className='text-sm font-semibold md:text-lg lg:text-center'>We help companies of all types work better, save time and money with a simply better financial service that works.</p>
                         </div>
-                        <section className='mt-12'>
-                              <div className='hidden  lg:flex flex-col   overflow-auto' ref={targetScroll}>
-                                    <div className='lg:ml-32 w-[110%] flex scroll-child'>
+                        <motion.section className='mt-12'>
+                              <motion.div ref={ref} className='hidden  lg:flex flex-col   overflow-auto' >
+                                    <motion.div ref={ref} className='lg:ml-32 w-[110%] flex scroll-child'>
                                           {DummyData.map((item, index) => (
                                                 <Card key={index} title={item.title} content={item.content} image={item.img} />
                                           ))}
-                                    </div>
-                              </div>
+                                    </motion.div>
+                              </motion.div>
+
+
 
                               <div className='hidden lg:flex  items-center space-x-12 mt-20 w-[77%] mx-auto'>
                                     <div className='flex-1'>
-                                          <div className='bg-[#212326]  rounded-lg'>
-                                                <motion.div style={{ x: scroll }} className='bg-white h-full relative  py-2 rounded-lg w-[60%]'></motion.div>
-                                          </div>
+                                          <motion.div  className='bg-[#212326]  rounded-lg'>
+                                                <motion.div style={{ x: xaxxis }} className='bg-white h-full relative py-2 rounded-lg w-[60%]'></motion.div>
+                                          </motion.div>
                                     </div>
 
                                     <div>
@@ -68,7 +71,7 @@ const Pagination = () => {
                                     <Svg style={`rotate-180  cursor-pointer`} w='32' h='32' onclick={handlepaginateleft} />
                                     <Svg style={''} w='32' onclick={handlepaginateright} />
                               </div>
-                        </section>
+                        </motion.section>
                   </div>
             </section>
       )
