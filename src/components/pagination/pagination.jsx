@@ -64,7 +64,7 @@ const Pagination = () => {
                                     </div>
 
                               </div>
-                              <div className='p-8  lg:hidden'>
+                              <div className='p-6  lg:hidden'>
                                     <Card title={visible.title} content={visible.content} image={visible.img} />
                               </div>
                               <div className='flex justify-between px-1 lg:hidden'>
