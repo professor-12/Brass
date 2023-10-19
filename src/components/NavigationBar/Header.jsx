@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 export const Header = () => {
       return (
             <div className='fixed z-50 right-0 top-0 left-0  bg-black'>
-                  <div className='flex bg-black relative  left-0 container   px-4  lg:w-[86.8%] mx-auto items-center p-4 justify-between'>
+                  <div className='flex bg-black relative  left-0 container  px-4  lg:w-[86.8%] mx-auto items-center p-4 justify-between'>
                         <div className=''>
                               <img src="/logo.svg" alt="" />
                         </div>

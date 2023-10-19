@@ -49,7 +49,7 @@ const Pagination = () => {
 
 
 
-                              <div className='hidden lg:flex  items-center space-x-12 mt-20 w-[77%] mx-auto'>
+                              <div className='hidden lg:flex  items-center mt-20 w-[77%] mx-auto'>
                                     <div className='flex-1'>
                                           <motion.div  className='bg-[#212326]  rounded-lg'>
                                                 <motion.div style={{ x: xaxxis }} className='bg-white h-full relative py-2 rounded-lg w-[60%]'></motion.div>

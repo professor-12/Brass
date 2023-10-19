@@ -7,7 +7,7 @@ const Accordion = () => {
             <section className="py-40 lg:w-[80%] mx-auto">
                   <div className='flex flex-col  justify-between xl:flex-row'>
                         <div className='space-y-4 xl:w-[50%] my-1'>
-                              <h1 className='lg:text-4xl leading-10 md:text-3xl text-3xl xl:text-left text-center w-[27rem] md:w-[35rem] mx-auto font-bold md:leading-[1]'>Some of the things you may want to know</h1>
+                              <h1 className='lg:text-4xl leading-10 md:text-3xl text-3xl xl:text-left text-center w-[100%] md:w-[35rem] mx-auto font-bold md:leading-[1]'>Some of the things you may want to know</h1>
                               <p className='font-semibold xl:text-start text-center'>We answered questions so you don't have to ask them.</p>
                         </div>
                         <div className='flex-1'>

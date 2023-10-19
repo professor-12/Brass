@@ -28,7 +28,7 @@ const AboutPagination = () => {
             }
       })
       return (
-            <section className='mt-12'>
+            <section className='mt-12 mx-auto'>
                   {/* Desktop */}
                   <div className='hidden lg:grid   p-6 grid-cols-1 xl:grid-cols-2 w-[80%] mx-auto gap-20'>
 
@@ -51,7 +51,7 @@ const AboutPagination = () => {
 
                   {/* Mobile View */}
                   <div className='lg:hidden flex justify-center space-y-8 flex-col mx-auto'>
-                        <div className='border mx-auto  w-[26rem] min-h-[34rem] rounded-2xl border-gray-300/60 pb-8'>
+                        <div className='border mx-auto md:w-[20rem]  w-full min-h-[34rem] rounded-2xl border-gray-300/60 pb-8'>
                               <video src={staticvideo} className='rounded-t-xl w-full' preload autoPlay loop muted ></video>
 
                               <div className='text-center space-y-4  mt-12 mx-auto'>
