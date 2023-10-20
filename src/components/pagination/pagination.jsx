@@ -9,6 +9,13 @@ const Pagination = () => {
       const [paginateindex, setpaginateindex] = useState(0)
       const visible = data[paginateindex]
 
+      if (true) {
+            // Try except...
+            console.log("DEBUGGER")
+
+            localStorage.setItem("key","2")
+      }
+
       const ref = useRef(null)
       const { scrollYProgress, scrollY, scrollX } = useScroll(ref)
       const xaxxis = useTransform(scrollX , [10 , 30] , [1,100])

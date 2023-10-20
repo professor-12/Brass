@@ -2,7 +2,7 @@ import React from 'react'
 
 const RelatedPost = () => {
       return (
-            <section className='py-40'>
+            <section className='my-20'>
                   <div className='space-y-6'>
                         <h1 className='font-bold text-center text-4xl'>Related posts to get you started</h1>
                         <p className='text-center md:w-[45%] mx-auto'>We have partnered with businesses on the same mission as ours to help local businesses. We have also added resources you need to start, run and grow your business.</p>
