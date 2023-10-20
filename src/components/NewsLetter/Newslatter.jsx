@@ -3,8 +3,8 @@ import React from 'react'
 const Newslatter = () => {
       return (
             <div className='pb-40 p-2 space-y-12'>
-                  <div className='md:w-[45rem] mx-auto space-y-4 text-center '>
-                        <h1 className='text-3xl mx-auto md:text-4xl xl:text-4xl font-bold'>Get started for free</h1>
+                  <div id="join" className='md:w-[45rem] mx-auto space-y-4 text-center '>
+                        <h1 className='text-3xl mx-auto md:text-5xl xl:text-4xl font-bold'>Get started for free</h1>
                         <p className="md:font-[500] text-sm  md:w-[45rem] font-semibold mx-auto  leading-6 md:text-base">Get all the best financial products for your business growth for free. Open the last financial tool you will ever need for your business.</p>
                   </div>
 

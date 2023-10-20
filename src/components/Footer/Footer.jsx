@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { motion } from "framer-motion"
 import { FooterList } from '../../DummyData/utils'
 import FooterIItems from './FooterItems/FooterIItems'
 import  Index from './FooterItems/index'

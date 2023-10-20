@@ -8,7 +8,7 @@ export const Header = () => {
                               <img src="/logo.svg" alt="" />
                         </div>
                         <div className='flex items-center space-x-4'>
-                              <motion.button className='py-[14px] px-[32px] text-sm text-green-600 md:text-white font-medium md:bg-green-500/90 md:hover:bg-green-500/80 rounded '>join the waiting list</motion.button>
+                              <motion.button className='py-[14px] px-[32px] text-sm text-green-600 md:text-white font-medium md:bg-green-500/90 md:hover:bg-green-500/80 rounded '><a href="#join">join the waiting list</a></motion.button>
                               <div className='countrylogo relative right-0 h-auto'>
                                     <img src="/country.svg" className='w-8 countrylogo ' alt="" />
                                     <div className='popup countrylogo hidden absolute overflow-hidden right-1     rounded-lg w-28 text-black flex-col'>
