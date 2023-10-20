@@ -33,7 +33,7 @@ const Pagination = () => {
             <section className='mt-20 pb-32 px-4 w-full'>
                   <div>
                         <div>
-                               <h1 className='font-bold tracking-tight lg:text-center text-start  mb-8 text-3xl md:text-5xl'>The complete financial stack for your business</h1>
+                               <h1 className='font-bold tracking-tight lg:text-center text-start  mb-8 text-[2rem] md:text-5xl'>The complete financial stack for your business</h1>
                               <p className='text-sm font-semibold md:text-lg  lg:text-center'>Top-end financial tools to help your business with its financial operations and cash flow.
                               </p>
                               <p className='text-sm font-semibold md:text-lg lg:text-center'>We help companies of all types work better, save time and money with a simply better financial service that works.</p>
@@ -49,7 +49,7 @@ const Pagination = () => {
 
 
 
-                              <div className='hidden lg:flex  items-center mt-20 w-[77%] mx-auto'>
+                              <div className='hidden lg:flex  items-center space-x-12 mt-20 w-[77%] mx-auto'>
                                     <div className='flex-1'>
                                           <motion.div  className='bg-[#212326]  rounded-lg'>
                                                 <motion.div style={{ x: xaxxis }} className='bg-white h-full relative py-2 rounded-lg w-[60%]'></motion.div>
@@ -64,10 +64,10 @@ const Pagination = () => {
                                     </div>
 
                               </div>
-                              <div className='p-6  lg:hidden'>
+                              <div className='lg:hidden'>
                                     <Card title={visible.title} content={visible.content} image={visible.img} />
                               </div>
-                              <div className='flex justify-between px-1 lg:hidden'>
+                              <div className='flex justify-between px-1 mt-4 lg:hidden'>
                                     <Svg style={`rotate-180  cursor-pointer`} w='32' h='32' onclick={handlepaginateleft} />
                                     <Svg style={''} w='32' onclick={handlepaginateright} />
                               </div>
